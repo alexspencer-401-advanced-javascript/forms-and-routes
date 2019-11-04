@@ -16,12 +16,8 @@ export default function App() {
       <Header />
       <Router>
         {/* <Link to='/yellow'>Yellow</Link> */}
-
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-
+          <Route exact path="/" component={Home}></Route>
         </Switch>
       </Router>
       <Footer />

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import getRandomATLACharacter from '../../services/random-character-api-call';
+import { getRandomATLACharacter } from '../../services/random-character-api-call';
 import Character from '../character/Character';
+import Search from '../search/Search';
 
 export default class Home extends Component {
 
@@ -32,6 +33,7 @@ export default class Home extends Component {
       <>
         <Character item={this.state.character} />
         <button onClick={this.handleOnClick}>Get Random Character</button>
+        <Search />
       </>
     );
   }

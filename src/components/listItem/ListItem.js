@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Character = ({ item }) => {
+const ListItem = ({ item }) => {
 
   return (
-    <div key={item}>
+    <li key={item}>
       <figure>
         <img src={item.photoUrl} alt={item.name} />
         <figcaption>{item.name}</figcaption>
       </figure>
-    </div>
+    </li>
   );
 };
 
-Character.propTypes = {
+ListItem.propTypes = {
   item: PropTypes.shape({
     _id: PropTypes.string,
     name: PropTypes.string,
@@ -21,4 +21,4 @@ Character.propTypes = {
   })
 };
 
-export default Character;
+export default ListItem;
