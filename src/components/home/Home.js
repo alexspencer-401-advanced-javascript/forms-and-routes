@@ -20,7 +20,6 @@ export default class Home extends Component {
     getRandomATLACharacter()
       .then((fetchedChar) => {
         this.setState({ character: fetchedChar[0] });
-        console.log(this.state.character);
       });
   }
 

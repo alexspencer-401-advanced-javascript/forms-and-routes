@@ -18,11 +18,9 @@ export default class CharacterContainer extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.match.params);
     getSpecificCharacter(this.props.match.params.id)
       .then(character => {
         this.setState({ character });
-        console.log(character);
       });
   }
 

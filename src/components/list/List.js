@@ -22,7 +22,6 @@ export default class List extends Component {
     getSearchedTLACharacter(this.props.match.params.search || '', 1)
       .then(characters => {
         this.setState({ characters });
-        console.log(characters);
       });
   }
 

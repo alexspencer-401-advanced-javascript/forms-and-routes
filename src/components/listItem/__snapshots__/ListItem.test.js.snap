@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component renders ListItem 1`] = `
+<li>
+  <figure>
+    <img />
+    <Link
+      to="/character/undefined"
+    >
+      <figcaption />
+    </Link>
+  </figure>
+</li>
+`;
